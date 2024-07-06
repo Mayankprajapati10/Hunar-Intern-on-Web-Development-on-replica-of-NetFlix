@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="netflix-logo.png" alt="Netflix Logo" class="logo">
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Unlimited movies, TV shows, and more.</h1>
+                <p>Watch anywhere. Cancel anytime.</p>
+                <button class="btn btn-primary">Join Free for a Month</button>
+            </div>
+        </section>
+
+        <!-- Section 2: Subtitles and Categories -->
+        <section class="subtitles">
+            <div class="container">
+                <h2>Explore by Category</h2>
+                <div class="subtitle-list">
+                    <div class="subtitle-item active" data-category="trending">
+                        Trending
+                    </div>
+                    <div class="subtitle-item" data-category="action">
+                        Action
+                    </div>
+                    <div class="subtitle-item" data-category="comedy">
+                        Comedy
+                    </div>
+                    <div class="subtitle-item" data-category="drama">
+                        Drama
+                    </div>
+                    <!-- Add more categories as needed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Video Carousels -->
+        <div class="carousels">
+            <!-- Carousel for Trending -->
+            <section class="video-carousel active" id="trending">
+                <div class="container">
+                    <h2>Trending Now</h2>
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <img src="movie1.jpg" alt="Movie 1" class="movie-poster">
+                            <div class="movie-details">
+                                <h3 class="movie-title">Movie Title 1</h3>
+                                <p class="movie-description">Description of Movie 1</p>
+                                <button class="btn-watch" data-video="video1.mp4">Watch</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="movie2.jpg" alt="Movie 2" class="movie-poster">
+                            <div class="movie-details">
+                                <h3 class="movie-title">Movie Title 2</h3>
+                                <p class="movie-description">Description of Movie 2</p>
+                                <button class="btn-watch" data-video="video2.mp4">Watch</button>
+                            </div>
+                        </div>
+                        <!-- Add more carousel items as needed -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Carousel for Action -->
+            <section class="video-carousel" id="action">
+                <div class="container">
+                    <h2>Action Movies</h2>
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <img src="action1.jpg" alt="Action 1" class="movie-poster">
+                            <div class="movie-details">
+                                <h3 class="movie-title">Action Movie 1</h3>
+                                <p class="movie-description">Description of Action Movie 1</p>
+                                <button class="btn-watch" data-video="action1.mp4">Watch</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="action2.jpg" alt="Action 2" class="movie-poster">
+                            <div class="movie-details">
+                                <h3 class="movie-title">Action Movie 2</h3>
+                                <p class="movie-description">Description of Action Movie 2</p>
+                                <button class="btn-watch" data-video="action2.mp4">Watch</button>
+                            </div>
+                        </div>
+                        <!-- Add more carousel items as needed -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Carousel for Comedy -->
+            <section class="video-carousel" id="comedy">
+                <div class="container">
+                    <h2>Comedy Movies</h2>
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <img src="comedy1.jpg" alt="Comedy 1" class="movie-poster">
+                            <div class="movie-details">
+                                <h3 class="movie-title">Comedy Movie 1</h3>
+                                <p class="movie-description">Description of Comedy Movie 1</p>
+                                <button class="btn-watch" data-video="comedy1.mp4">Watch</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="comedy2.jpg" alt="Comedy 2" class="movie-poster">
+                            <div class="movie-details">
+                                <h3 class="movie-title">Comedy Movie 2</h3>
+                                <p class="movie-description">Description of Comedy Movie 2</p>
+                                <button class="btn-watch" data-video="comedy2.mp4">Watch</button>
+                            </div>
+                        </div>
+                        <!-- Add more carousel items as needed -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Carousel for Drama -->
+            <section class="video-carousel" id="drama">
+                <div class="container">
+                    <h2>Drama Movies</h2>
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <img src="drama1.jpg" alt="Drama 1" class="movie-poster">
+                            <div class="movie-details">
+                                <h3 class="movie-title">Drama Movie 1</h3>
+                                <p class="movie-description">Description of Drama Movie 1</p>
+                                <button class="btn-watch" data-video="drama1.mp4">Watch</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="drama2.jpg" alt="Drama 2" class="movie-poster">
+                            <div class="movie-details">
+                                <h3 class="movie-title">Drama Movie 2</h3>
+                                <p class="movie-description">Description of Drama Movie 2</p>
+                                <button class="btn-watch" data-video="drama2.mp4">Watch</button>
+                            </div>
+                        </div>
+                        <!-- Add more carousel items as needed -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Section 4: Contact Form -->
+        <section class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Netflix Clone. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
