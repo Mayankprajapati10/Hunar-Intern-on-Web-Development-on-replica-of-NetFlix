@@ -1,0 +1,23 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const subtitleItems = document.querySelectorAll('.subtitle-item');
+    const carousels = document.querySelectorAll('.video-carousel');
+
+    subtitleItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const category = item.getAttribute('data-category');
+
+            subtitleItems.forEach(subItem => {
+                subItem.classList.remove('active');
+            });
+            item.classList.add('active');
+
+            carousels.forEach(carousel => {
+                if (carousel.id === category) {
+                    carousel.classList.add('active');
+                } else {
+                    carousel.classList.remove('active');
+                }
+            });
+        });
+    });
+});
